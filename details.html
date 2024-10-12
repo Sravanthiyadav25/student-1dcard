@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Fees Details</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #f0f0f0;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .container {
+            width: 80%;
+            max-width: 600px;
+            background: linear-gradient(135deg, #e0e0e0, #b0c4de);
+            border-radius: 20px;
+            padding: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        .container h2 {
+            text-align: center;
+            color: #333;
+            margin-bottom: 20px;
+        }
+
+        .fee-section, .table-container {
+            margin-bottom: 20px;
+        }
+
+        .fee-section p {
+            font-weight: bold;
+            color: #333;
+        }
+
+        .table-container h3 {
+            font-size: 18px;
+            font-weight: bold;
+            text-align: center;
+            margin-bottom: 10px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+        }
+
+        table, th, td {
+            border: 1px solid #ddd;
+        }
+
+        th, td {
+            padding: 12px;
+            text-align: center;
+        }
+
+        th {
+            background-color: #4CAF50;
+            color: white;
+        }
+
+        td a {
+            color: #1a73e8;
+            text-decoration: none;
+        }
+
+        td a:hover {
+            text-decoration: underline;
+        }
+
+        .back-button {
+            display: block;
+            text-align: center;
+            width: 30%;
+            padding: 12px;
+            font-size: 16px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            
+            cursor: pointer;
+            text-decoration: none;
+        }
+
+        .back-button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Fees Receipts</h2>
+        
+        <div class="fee-section">
+            <p>Tuition Fees: Rs. 1,00,000</p>
+            <p>Transport Fees: Rs. 30,000</p>
+            <p>Other Fees: Rs. 10,000</p>
+        </div>
+
+        <div class="table-container">
+            <h3>Payment Details</h3>
+            <table>
+                <tr>
+                    <th>Date</th>
+                    <th>Receipt No</th>
+                    <th>Amount</th>
+                    <th>Balance</th>
+                </tr>
+                <tr>
+                    <td>06 June 2024</td>
+                    <td><a href="#">123456</a></td>
+                    <td>Rs:10,000</td>
+                    <td>Rs:1,30,000</td>
+                </tr>
+                <tr>
+                    <td>07 July 2024</td>
+                    <td><a href="#">123456</a></td>
+                    <td>Rs:30,000</td>
+                    <td>Rs:1,00,000</td>
+                </tr>
+                <tr>
+                    <td>09 August 2024</td>
+                    <td><a href="#">123456</a></td>
+                    <td>Rs:50,000</td>
+                    <td>Rs:50,000</td>
+                </tr>
+                <tr>
+                    <td>11 September 2024</td>
+                    <td><a href="#">123456</a></td>
+                    <td>Rs:10,000</td>
+                    <td>Rs:40,000</td>
+                </tr>
+                <tr>
+                    <td>06 October 2024</td>
+                    <td><a href="#">123456</a></td>
+                    <td>Rs:40,000</td>
+                    <td>Rs:0</td>
+                </tr>
+            </table>
+        </div>
+
+        <button class="back-button" onclick="history.back()">Back</button>
+    </div>
+</body>
+</html>

@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Attendance</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #f0f0f0;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .container {
+            width: 80%;
+            max-width: 600px;
+            background: linear-gradient(135deg, #e0e0e0, #b0c4de);
+            border-radius: 20px;
+            padding: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            text-align: center;
+        }
+
+        h2 {
+            color: #c32222;
+        }
+
+        .month-section {
+            margin: 20px 0;
+        }
+
+        .days-grid {
+            display: grid;
+            grid-template-columns: repeat(7, 1fr);
+            gap: 10px;
+            margin-top: 10px;
+        }
+
+        .day {
+            width: 40px;
+            height: 40px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 5px;
+            color: #e3d5d5;
+            font-weight: bold;
+        }
+
+        .present {
+            background-color: #4CAF50;
+        }
+
+        .absent {
+            background-color: #e74c3c;
+        }
+
+        .back-button {
+            display: block;
+            width: 30%;
+            padding: 12px;
+            font-size: 16px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            text-align: center;
+            margin-top: 20px;
+            text-decoration: none;
+        }
+
+        .back-button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Attendance</h2>
+
+        <div class="month-section">
+            <h3>June 2024</h3>
+            <div class="days-grid">
+                <div class="day present">1</div>
+                <div class="day absent">2</div>
+                <div class="day present">3</div>
+                <div class="day present">4</div>
+                <div class="day absent">5</div>
+                <div class="day present">6</div>
+                <div class="day present">7</div>
+                <div class="day present">8</div>
+                <div class="day present">9</div>
+                <div class="day present">10</div>
+                <div class="day absent">11</div>
+                <div class="day absent">12</div>
+                <div class="day present">13</div>
+                <div class="day present">14</div>
+                <div class="day present">15</div>
+                <div class="day present">16</div>
+                <div class="day present">17</div>
+                <div class="day absent">18</div>
+                <div class="day present">19</div>
+                <div class="day present">20</div>
+                <div class="day present">21</div>
+                <div class="day present">22</div>
+                <div class="day absent">23</div>
+                <div class="day present">24</div>
+                <div class="day present">25</div>
+                <div class="day present">26</div>
+                <div class="day absent">27</div>
+                <div class="day present">28</div>
+                <div class="day present">29</div>
+                <div class="day absent">30</div>
+            </div>
+        </div>
+
+        <div class="month-section">
+            <h3>July 2024</h3>
+            <div class="days-grid">
+                <div class="day present">1</div>
+                <div class="day absent">2</div>
+                <div class="day present">3</div>
+                <div class="day present">4</div>
+                <div class="day absent">5</div>
+                <div class="day present">6</div>
+                <div class="day present">7</div>
+                <div class="day absent">8</div>
+                <div class="day present">9</div>
+                <div class="day present">10</div>
+                <div class="day absent">11</div>
+                <div class="day present">12</div>
+                <div class="day present">13</div>
+                <div class="day present">14</div>
+                <div class="day absent">15</div>
+                <div class="day present">16</div>
+                <div class="day present">17</div>
+                <div class="day absent">18</div>
+                <div class="day present">19</div>
+                <div class="day present">20</div>
+                <div class="day present">21</div>
+                <div class="day present">22</div>
+                <div class="day absent">23</div>
+                <div class="day present">24</div>
+                <div class="day present">25</div>
+                <div class="day present">26</div>
+                <div class="day absent">27</div>
+                <div class="day present">28</div>
+                <div class="day present">29</div>
+                <div class="day absent">30</div>
+            </div>
+        </div>
+
+        <button class="back-button" onclick="history.back()">Back</button>
+    </div>
+</body>
+</html>

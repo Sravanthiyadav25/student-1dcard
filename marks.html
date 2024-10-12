@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Marks</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background-color: #f0f0f0;
+        }
+
+        h1 {
+            color: #333;
+        }
+
+        .marks-container {
+            width: 50%;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            padding: 20px;
+            margin-top: 20px;
+        }
+
+        .marks-table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        .marks-table th, .marks-table td {
+            padding: 12px;
+            text-align: center;
+            border-bottom: 1px solid #ddd;
+        }
+
+        .marks-table th {
+            background-color: #4CAF50;
+            color: white;
+        }
+
+        .marks-table tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+
+        .back-button {
+            margin-top: 20px;
+            padding: 10px 20px;
+            font-size: 16px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .back-button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <h1>Marks Page</h1>
+    <div class="marks-container">
+        <h2>Sem 1-2 Marks</h2>
+        <table class="marks-table">
+            <tr>
+                <th>Subject</th>
+                <th>Marks</th>
+                <th>Grade</th>
+            </tr>
+            <tr>
+                <td>ODEVC</td>
+                <td>4.00</td>
+                <td>A</td>
+            </tr>
+            <tr>
+                <td>AP</td>
+                <td>4.00</td>
+                <td>B</td>
+            </tr>
+            <tr>
+                <td>EW</td>
+                <td>4.00</td>
+                <td>A+</td>
+            </tr>
+            <tr>
+                <td>ESE</td>
+                <td>2.00</td>
+                <td>A</td>
+            </tr>
+            <tr>
+                <td>EDC</td>
+                <td>4.00</td>
+                <td>B</td>
+            </tr>
+            <tr>
+                <td>ELCS/td>
+                <td>2.00</td>
+                <td>C</td>
+            </tr>
+        </table>
+    </div><button class="back-button" onclick="history.back()">Back</button>
+    
+</body>
+</html>

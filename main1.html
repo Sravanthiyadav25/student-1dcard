@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>SRAVANTHI's details</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #f0ecec;
+            height: 100vh;
+            margin: 0;
+        }
+        .id-card {
+            width: 200px;
+            padding: 70px;
+            background-color: #edecec;
+            border-radius: 5px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            text-align: center;
+        }
+        
+        .id-card img {
+            width: 120px;
+            height: 150px;
+            border-radius: 5px;
+            object-fit: cover;
+            margin-bottom: 15px;
+        }
+
+        .id-card h2 {
+            font-size: 18px;
+            margin: 10px 0;
+            color: #333;
+        }
+
+        .id-card p {
+            font-size: 14px;
+            color: #666;
+            margin: 5px 0;
+        }
+
+        .nav-buttons {
+            margin-top: 20px;
+        }
+
+        .nav-buttons button {
+            padding: 10px 15px;
+            margin: 5px;
+            font-size: 14px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .nav-buttons button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <div class="id-card">
+        <img src="https://c.stocksy.com/a/Jmn700/z9/1859647.jpg" alt="Profile Photo"> 
+        <h2>GUNNALA SRAVABTHI YADAV</h2>
+        <p>ID: 23N81A05B5</p>
+        <p>Course: Computer Science Engineering</p>
+        <p>Year: 2nd Year</p>
+
+        <div class="nav-buttons">
+            <button onclick="navigateTo('main.html')">Next</button>
+        </div>
+    </div>
+
+    <script>
+        function navigateTo(page) {
+            window.location.href = page;
+        }
+    </script>
+</body>
+</html>

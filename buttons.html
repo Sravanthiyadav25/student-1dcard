@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>SRAVANTHI'details</title>
+        <link rel="stylesheet" href="style.css">
+        <script>
+            function navigateTo(page){
+                
+            window.location.href = page;
+            }
+        </script>
+        <style>
+             body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #f0ecec;
+            height: 100vh;
+            margin: 0;
+        }
+            .butt{
+                width: 120px;
+            height: 150px;
+            border-radius: 5px;
+            object-fit: cover;
+            margin-bottom: 15px;
+            align-items: center;
+            
+            }
+        </style>
+    </head>
+    <body>
+        <div class="butt">
+    <button onclick="navigateTo('attendance.html')" class="att">Attendance</button>
+    <button onclick="navigateTo('marks.html')" class="mar">Marks</button>
+    <button onclick="navigateTo('details.html')" class="details">Fees Details</button>
+    <button onclick="navigateTo('main1.html')" class="back">Back</button>
+        </div>
+        
+    </body>
+</html>
